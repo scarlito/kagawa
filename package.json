@@ -1,0 +1,15 @@
+{
+  "name": "kagawa",
+  "version": "0.2.0",
+  "description": "Validation and sanitization for node.js",
+  "main": "validator.js",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "validator": "^3.17.0"
+  },
+  "devDependencies": {
+    "tap": "^0.4.12"
+  },
+  "author": "scarlz",
+  "license": "MIT"
+}
