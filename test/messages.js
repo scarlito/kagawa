@@ -17,7 +17,7 @@ test('default error messages', function(t) {
   };
 
   var errors = kagawa.run(obj, schema);
-  t.ok(errors[0].message == messages.email, 'validator error message used');
+  t.ok(errors[0].message === messages.email, 'validator error message used');
 });
 
 
@@ -33,7 +33,7 @@ test('an error message is parsed with the validator expectation', function(t) {
   };
 
   var errors = kagawa.run(obj, schema);
-  t.ok(errors[0].message == 'The length should be at least 10'
+  t.ok(errors[0].message === 'The length should be at least 10'
     , '%{} is parsed and replaced with the validator argument');
 });
 
@@ -56,15 +56,15 @@ test('messages defined on the property', function(t) {
 
   obj = { email: 'foobar.com'};
   errors = kagawa.run(obj, schema);
-  t.ok(errors[0].message == 'property error', 'general message used');
+  t.ok(errors[0].message === 'property error', 'general message used');
 
   obj = { email: 'f@b.com'};
   errors = kagawa.run(obj, schema);
-  t.ok(errors[0].message == 'specific error', 'individual message used');
+  t.ok(errors[0].message === 'specific error', 'individual message used');
 
   obj = { email: 'foo@bar.com'};
   errors = kagawa.run(obj, schema);
-  t.ok(errors[0].message == 'validate error', 'validate function uses individual message');
+  t.ok(errors[0].message === 'validate error', 'validate function uses individual message');
 });
 
 
