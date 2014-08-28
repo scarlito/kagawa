@@ -15,7 +15,8 @@ var data = {
   email: [
     '',
     'bar@foo.com',
-    'foo@bar.com'
+    'foo@bar.com',
+    'flubber'
   ]
 };
 
