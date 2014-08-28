@@ -15,7 +15,7 @@ test('property configuration is accepted for an array of primitives', function(t
     }
   };
   var obj = {
-    list: ['one', 'two']
+    list: ['one', 'two', 'three']
   };
 
   var errors = kagawa.run(obj, schema);
