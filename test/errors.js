@@ -5,7 +5,7 @@ var kagawa = require('../index.js');
 var messages = kagawa.messages;
 
 
-test('errors exist as an array of objects', function(t) {
+test('errors exist as an array of objects like a bitch', function(t) {
   t.plan(1);
 
   var obj = { email: 'foobar.com'};
